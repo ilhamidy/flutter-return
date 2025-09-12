@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_return/screen/componen1.dart';
+import 'package:flutter_return/screen/componen2.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Project1 extends StatelessWidget {
@@ -21,32 +22,53 @@ class Project1 extends StatelessWidget {
           ],
         ),
       ),
-      body: Column(
-        children: [
-          Padding(
-            padding: const EdgeInsets.all(10.0),
-            child: SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Row(
-                spacing: 15,
-                children: [
-                  Componen1(
-                    namaAkun: '@Lebah_ganteng',
-                    fotoProfile: 'assets/images/Windows.webp',
-                  ),
-                  Componen1(
-                    namaAkun: '@joko',
-                    fotoProfile: 'assets/images/wallpp.jpg',
-                  ),
-                  Componen1(
-                    namaAkun: '@Supradi',
-                    fotoProfile: 'assets/images/profile.webp',
-                  ),
-                ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  spacing: 15,
+                  children: [
+                    Componen1(
+                      namaAkun: '@Lebah_ganteng',
+                      fotoProfile: 'assets/images/Windows.webp',
+                      story: 'assets/images/wallpp.jpg',
+                    ),
+                    Componen1(
+                      namaAkun: '@joko',
+                      fotoProfile: 'assets/images/wallpp.jpg',
+                      story: 'assets/images/Windows.webp',
+                    ),
+                    Componen1(
+                      namaAkun: '@Supradi',
+                      fotoProfile: 'assets/images/profile.webp',
+                      story: 'assets/images/2.png',
+                    ),
+                    Componen1(
+                      namaAkun: '@Lebah_ganteng',
+                      fotoProfile: 'assets/images/Windows.webp',
+                      story: 'assets/images/wallpp.jpg',
+                    ),
+                    Componen1(
+                      namaAkun: '@joko',
+                      fotoProfile: 'assets/images/wallpp.jpg',
+                      story: 'assets/images/Windows.webp',
+                    ),
+                    Componen1(
+                      namaAkun: '@Supradi',
+                      fotoProfile: 'assets/images/profile.webp',
+                      story: 'assets/images/2.png',
+                    ),
+                  ],
+                ),
               ),
             ),
-          ),
-        ],
+            Componen2(),
+          ],
+        ),
       ),
     );
   }
