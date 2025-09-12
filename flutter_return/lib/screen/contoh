@@ -1,0 +1,65 @@
+//------{ catatan }------
+
+// class _state10State extends State<state10> {
+//   int number = 0;
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       body: Center(
+//         child: Column(
+//           mainAxisAlignment: MainAxisAlignment.center,
+//           children: [
+//             Text('$number', style: TextStyle(fontSize: 20)),
+//             SizedBox(height: 20),
+//             ElevatedButton(
+//               onPressed: () {
+//                 setState(() {
+//                   number++;
+//                 });
+//                 log('$number');
+//               },
+//               child: Text("ubah"),
+//             ),
+//           ],
+//         ),
+//       ),
+//     );
+//   }
+// }
+
+//-----------------------
+
+// Stack(
+//   // Secara default, alignment-nya adalah topLeft
+//   // Kita ubah ke tengah agar widget yang tidak di-Positioned berada di tengah
+//   alignment: Alignment.center,
+//   children: <Widget>[
+//     // 1. Widget paling bawah (dasar)
+//     Container(
+//       width: 300,
+//       height: 300,
+//       color: Colors.blue,
+//       child: Image.network(
+//         'https://images.pexels.com/photos/167699/pexels-photo-167699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+//         fit: BoxFit.cover,
+//       ),
+//     ),
+
+//     // 2. Widget di atasnya, diposisikan 10px dari bawah dan kiri
+//     Positioned(
+//       bottom: 10,
+//       left: 10,
+//       child: Container(
+//         padding: const EdgeInsets.all(8.0),
+//         color: Colors.black.withOpacity(0.5),
+//         child: const Text(
+//           'Hutan di Pagi Hari',
+//           style: TextStyle(color: Colors.white, fontSize: 20),
+//         ),
+//       ),
+//     ),
+
+//     // 3. Widget paling atas, di tengah
+//     const Icon(Icons.play_circle_fill, color: Colors.white, size: 60),
+//   ],
+// ),
