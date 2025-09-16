@@ -2,7 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Componen2 extends StatelessWidget {
-  const Componen2({super.key});
+  final String fotoProfile;
+  final String namaAkun;
+  final String postingan;
+  final String caption;
+  const Componen2({
+    super.key,
+    required this.fotoProfile,
+    required this.namaAkun,
+    required this.postingan,
+    required this.caption,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +28,7 @@ class Componen2 extends StatelessWidget {
               children: [
                 SizedBox(
                   width: double.infinity,
-                  child: Image.asset('assets/images/2.png', fit: BoxFit.cover),
+                  child: Image.asset(postingan, fit: BoxFit.cover),
                 ),
                 Positioned(
                   top: 10,
@@ -32,13 +42,13 @@ class Componen2 extends StatelessWidget {
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           image: DecorationImage(
-                            image: AssetImage('assets/images/Windows.webp'),
+                            image: AssetImage(fotoProfile),
                             fit: BoxFit.cover,
                           ),
                         ),
                       ),
                       Text(
-                        "@Fatimah_girl",
+                        namaAkun,
                         style: GoogleFonts.poppins(
                           fontSize: 12,
                           fontWeight: FontWeight.w500,
@@ -49,6 +59,32 @@ class Componen2 extends StatelessWidget {
                 ),
               ],
             ),
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Row(
+                spacing: 25,
+                children: [
+                  Icon(Icons.favorite_border_outlined, size: 30),
+                  Icon(Icons.chat_bubble_outline, size: 30),
+                  Icon(Icons.send_outlined, size: 30),
+                ],
+              ),
+              Icon(Icons.bookmark_border_outlined, size: 30),
+            ],
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(bottom: 20, left: 20, right: 20),
+          child: Text(
+            maxLines: 3,
+            overflow: TextOverflow.ellipsis,
+            style: GoogleFonts.poppins(),
+            caption,
           ),
         ),
       ],

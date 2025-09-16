@@ -66,8 +66,37 @@ class Project1 extends StatelessWidget {
                 ),
               ),
             ),
-            Componen2(),
+            Componen2(
+              fotoProfile: 'assets/images/Windows.webp',
+              namaAkun: '@Aisy4hLathifah09',
+              postingan: 'assets/images/2.png',
+              caption:
+                  'qrwewdjahdgsayghasdhsgfidsfdsjkcdsgidscgdsgchdghcgddhsggyseftrcduibcrucgdsjgfhdscgysgfmhdsbchdscgjxhgchxzcvjsfgsudjcbjsdcbnjz,dgcdkzhgcjz,bchdzfcyjgduandaildhaudhgaww',
+            ),
+            Componen2(
+              fotoProfile: 'assets/images/wallpp.jpg',
+              namaAkun: '@FatimahAiri_6',
+              postingan: 'assets/images/kamar.jpeg',
+              caption:
+                  'qrwewdjahdgsayghasdhsgfidsfdsjkcdsgidscgdsgchdghcgddhsggyseftrcduibcrucgdsjgfhdscgysgfmhdsbchdscgjxhgchxzcvjsfgsudjcbjsdcbnjz,dgcdkzhgcjz,bchdzfcyjgduandaildhaudhgaww',
+            ),
           ],
+        ),
+      ),
+      bottomNavigationBar: SizedBox(
+        height: 50,
+        child: BottomAppBar(
+          color: Colors.black87,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              Icon(Icons.home_filled, size: 25, color: Colors.white),
+              Icon(Icons.search, size: 25, color: Colors.white),
+              Icon(Icons.add_box_outlined, size: 25, color: Colors.white),
+              Icon(Icons.video_call, size: 25, color: Colors.white),
+              Icon(Icons.person_2_rounded, size: 25, color: Colors.white),
+            ],
+          ),
         ),
       ),
     );
