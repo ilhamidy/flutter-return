@@ -63,3 +63,56 @@
 //     const Icon(Icons.play_circle_fill, color: Colors.white, size: 60),
 //   ],
 // ),
+
+//-----{ contoh textfield }------
+
+// Column(
+//   children: [
+//     TextField(
+//       controller: _textubah,
+//       // obscureText: true,
+//       // obscuringCharacter: '*',
+//       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
+//       textAlign: TextAlign.center,
+//       onChanged: (value) => setState(() {}),
+//       maxLength: 16,
+//     ),
+//     SizedBox(height: 15),
+//     Text(_textubah.text),
+//   ],
+// ),
+
+//-----{ contoh listview }-----
+
+// import 'dart:developer';
+
+// import 'package:flutter/material.dart';
+
+// class MyWidget extends StatelessWidget {
+//   const MyWidget({super.key});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(body: ListView(children: createContainer()));
+//   }
+// }
+
+// List<Widget> createContainer() => List.generate(
+//   15,
+//   (index) => Builder(
+//     builder: (context) {
+//       log('rendering container $index');
+//       return SizedBox(
+//         child: UnconstrainedBox(
+//           child: Container(
+//             margin: EdgeInsets.all(10),
+//             height: 100,
+//             width: 100,
+//             color: Colors.redAccent,
+//           ),
+//         ),
+//       );
+//     },
+//   ),
+// );
+
