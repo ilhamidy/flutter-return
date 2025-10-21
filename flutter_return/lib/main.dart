@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_return/screen/dropdown.dart';
+import 'package:flutter_return/screen/dialog.dart';
+// import 'package:flutter_return/screen/dropdown.dart';
+// import 'package:flutter_return/screen/elevatedButton1.dart';
+// import 'package:flutter_return/screen/gestur.dart';
+// import 'package:flutter_return/screen/navigator1.dart';
 // import 'package:flutter_return/screen/homescreen.dart';
 // import 'package:flutter_return/screen/pageview.dart';
 // import 'package:flutter_return/screen/project1.dart';
@@ -35,7 +39,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: Dropdown1(),
+      home: Dialog1(),
       // home: HomeScreen(),
     );
   }
