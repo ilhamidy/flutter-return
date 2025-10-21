@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_return/screen/dialog.dart';
+import 'package:flutter_return/screen/dialog2.dart';
+import 'package:flutter_return/screen/gestur.dart';
 // import 'package:flutter_return/screen/dropdown.dart';
 // import 'package:flutter_return/screen/elevatedButton1.dart';
 // import 'package:flutter_return/screen/gestur.dart';
@@ -39,7 +41,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: Dialog1(),
+      home: Dialog2(),
       // home: HomeScreen(),
     );
   }
